@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<script type="text/javascript">
+  var script = document.createElement("script")
+  script.type = 'text/javascript';
+  script.src = '//' + window.location.hostname + ':35729/livereload.js';
+  document.getElementsByTagName("head")[0].appendChild(script);
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.HTML</scope> -->
+</snippet>
