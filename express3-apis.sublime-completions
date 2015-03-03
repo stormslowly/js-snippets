@@ -1,0 +1,217 @@
+{
+
+	"scope": "source.js",
+
+	"completions": [{
+		"trigger": "app.set",
+		"contents": "app.set(${1:name},${2: value})"
+	}, {
+		"trigger": "app.get",
+		"contents": "app.get(${1:name})"
+	}, {
+		"trigger": "app.enable",
+		"contents": "app.enable(${1:name})"
+	}, {
+		"trigger": "app.disable",
+		"contents": "app.disable(${1:name})"
+	}, {
+		"trigger": "app.enabled",
+		"contents": "app.enabled(${1:name})"
+	}, {
+		"trigger": "app.disabled",
+		"contents": "app.disabled(${1:name})"
+	}, {
+		"trigger": "app.configure",
+		"contents": "app.configure(${1:[env]},${2: callback})"
+	}, {
+		"trigger": "app.use",
+		"contents": "app.use(${1:[path]},${2: function})"
+	}, {
+		"trigger": "settings",
+		"contents": "settings"
+	}, {
+		"trigger": "app.engine",
+		"contents": "app.engine(${1:ext},${2: callback})"
+	}, {
+		"trigger": "app.param",
+		"contents": "app.param(${1:[name]},${2: callback})"
+	}, {
+		"trigger": "app.VERB",
+		"contents": "app.VERB(${1:path},${2: [callback...]},${3: callback})"
+	}, {
+		"trigger": "app.all",
+		"contents": "app.all(${1:path},${2: [callback...]},${3: callback})"
+	}, {
+		"trigger": "app.locals",
+		"contents": "app.locals"
+	}, {
+		"trigger": "app.render",
+		"contents": "app.render(${1:view},${2: [options]},${3: callback})"
+	}, {
+		"trigger": "app.routes",
+		"contents": "app.routes"
+	}, {
+		"trigger": "app.listen",
+		"contents": "app.listen(${1:})"
+	}, {
+		"trigger": "req.params",
+		"contents": "req.params"
+	}, {
+		"trigger": "req.query",
+		"contents": "req.query"
+	}, {
+		"trigger": "req.body",
+		"contents": "req.body"
+	}, {
+		"trigger": "req.files",
+		"contents": "req.files"
+	}, {
+		"trigger": "req.param",
+		"contents": "req.param(${1:name})"
+	}, {
+		"trigger": "req.route",
+		"contents": "req.route"
+	}, {
+		"trigger": "req.cookies",
+		"contents": "req.cookies"
+	}, {
+		"trigger": "req.signedCookies",
+		"contents": "req.signedCookies"
+	}, {
+		"trigger": "req.get",
+		"contents": "req.get(${1:field})"
+	}, {
+		"trigger": "req.accepts",
+		"contents": "req.accepts(${1:types})"
+	}, {
+		"trigger": "req.accepted",
+		"contents": "req.accepted"
+	}, {
+		"trigger": "req.is",
+		"contents": "req.is(${1:type})"
+	}, {
+		"trigger": "req.ip",
+		"contents": "req.ip"
+	}, {
+		"trigger": "req.ips",
+		"contents": "req.ips"
+	}, {
+		"trigger": "req.path",
+		"contents": "req.path"
+	}, {
+		"trigger": "req.host",
+		"contents": "req.host"
+	}, {
+		"trigger": "req.fresh",
+		"contents": "req.fresh"
+	}, {
+		"trigger": "req.stale",
+		"contents": "req.stale"
+	}, {
+		"trigger": "req.xhr",
+		"contents": "req.xhr"
+	}, {
+		"trigger": "req.protocol",
+		"contents": "req.protocol"
+	}, {
+		"trigger": "req.secure",
+		"contents": "req.secure"
+	}, {
+		"trigger": "req.subdomains",
+		"contents": "req.subdomains"
+	}, {
+		"trigger": "req.originalUrl",
+		"contents": "req.originalUrl"
+	}, {
+		"trigger": "req.acceptedLanguages",
+		"contents": "req.acceptedLanguages"
+	}, {
+		"trigger": "req.acceptedCharsets",
+		"contents": "req.acceptedCharsets"
+	}, {
+		"trigger": "req.acceptsCharset",
+		"contents": "req.acceptsCharset(${1:charset})"
+	}, {
+		"trigger": "req.acceptsLanguage",
+		"contents": "req.acceptsLanguage(${1:lang})"
+	}, {
+		"trigger": "res.status",
+		"contents": "res.status(${1:code})"
+	}, {
+		"trigger": "res.set",
+		"contents": "res.set(${1:field},${2: [value]})"
+	}, {
+		"trigger": "res.get",
+		"contents": "res.get(${1:field})"
+	}, {
+		"trigger": "res.cookie",
+		"contents": "res.cookie(${1:name},${2: value},${3: [options]})"
+	}, {
+		"trigger": "res.clearCookie",
+		"contents": "res.clearCookie(${1:name},${2: [options]})"
+	}, {
+		"trigger": "res.redirect",
+		"contents": "res.redirect(${1:[status]},${2: url})"
+	}, {
+		"trigger": "res.location",
+		"contents": "res.location"
+	}, {
+		"trigger": "res.charset",
+		"contents": "res.charset"
+	}, {
+		"trigger": "res.send",
+		"contents": "res.send(${1:[body|status]},${2: [body]})"
+	}, {
+		"trigger": "res.json",
+		"contents": "res.json(${1:[status|body]},${2: [body]})"
+	}, {
+		"trigger": "res.jsonp",
+		"contents": "res.jsonp(${1:[status|body]},${2: [body]})"
+	}, {
+		"trigger": "res.type",
+		"contents": "res.type(${1:type})"
+	}, {
+		"trigger": "res.format",
+		"contents": "res.format(${1:object})"
+	}, {
+		"trigger": "res.attachment",
+		"contents": "res.attachment(${1:[filename]})"
+	}, {
+		"trigger": "res.sendfile",
+		"contents": "res.sendfile(${1:path},${2: [options]},${3: [fn]]})"
+	}, {
+		"trigger": "res.download",
+		"contents": "res.download(${1:path},${2: [filename]},${3: [fn]})"
+	}, {
+		"trigger": "res.links",
+		"contents": "res.links(${1:links})"
+	}, {
+		"trigger": "res.locals",
+		"contents": "res.locals"
+	}, {
+		"trigger": "res.render",
+		"contents": "res.render(${1:view},${2: [locals]},${3: callback})"
+	}, {
+		"trigger": "express.basicAuth",
+		"contents": "express.basicAuth(${1:})"
+	}, {
+		"trigger": "express.bodyParser",
+		"contents": "express.bodyParser(${1:})"
+	}, {
+		"trigger": "express.compress",
+		"contents": "express.compress(${1:})"
+	}, {
+		"trigger": "express.cookieParser",
+		"contents": "express.cookieParser(${1:})"
+	}, {
+		"trigger": "express.cookieSession",
+		"contents": "express.cookieSession(${1:})"
+	}, {
+		"trigger": "express.csrf",
+		"contents": "express.csrf(${1:})"
+	}, {
+		"trigger": "express.directory",
+		"contents": "express.directory(${1:})"
+	}]
+
+}

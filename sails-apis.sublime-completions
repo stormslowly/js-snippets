@@ -1,0 +1,12 @@
+{
+
+	"scope": "source.js",
+
+	"completions": [{
+		"trigger": "req.flash",
+		"contents": "req.flash(${1:type},${2: message})"
+	}, {
+		"trigger": "res.redirect",
+		"contents": "res.redirect(${1:status|url},${2: url})"
+	}, ]
+}

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<% if (${1:array}.length) { %>
+  <ul>
+    <% ${1:array}.forEach(function(${2:item}){ %>
+      <li ><%= ${2:item} %></li>
+    <% }) %>
+  </ul>
+<% } %>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope><text></text>.html.js</scope>
+</snippet>
