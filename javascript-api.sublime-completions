@@ -28,9 +28,6 @@
 		"trigger": "draw\tjsProp",
 		"contents": "draw"
 	}, {
-		"trigger": "function\tjsProp",
-		"contents": "function"
-	}, {
 		"trigger": "graphic\tjsProp",
 		"contents": "graphic"
 	}, {
