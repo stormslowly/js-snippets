@@ -381,5 +381,14 @@
 	}, {
 		"trigger": "test\tjsRegExp",
 		"contents": "test"
+	}, {
+		"trigger": "getElementById\tjsDOM",
+		"contents": "getElementById($1)"
+	}, {
+		"trigger": "getElementsByName\tjsDOM",
+		"contents": "getElementsByName"
+	}, {
+		"trigger": "getElementsByTagName\tjsDOM",
+		"contents": "getElementsByTagName"
 	}]
 }

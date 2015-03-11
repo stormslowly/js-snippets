@@ -11,5 +11,11 @@
 	}, {
 		"trigger": "req.session\tsession",
 		"contents": "req.session."
+	}, {
+		"trigger": "req.isSocket\t sails .isSocket",
+		"contents": "req.isSocket"
+	}, {
+		"trigger": "res.badRequest\t sails badRequest",
+		"contents": "res.badRequest('${1:you are so bad}')"
 	}]
 }
