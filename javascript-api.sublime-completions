@@ -377,7 +377,7 @@
 		"contents": "valueOf"
 	}, {
 		"trigger": "exec\tjsRegExp",
-		"contents": "exec"
+		"contents": "exec('${1:string}')//return[match group...]"
 	}, {
 		"trigger": "test\tjsRegExp",
 		"contents": "test"
