@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+'use strict';
+var gulp = require('gulp');
+var less = require('gulp-less');
+var gutil = require('gulp-util');
+
+gulp.task('default', ['less']);
+
+gulp.task('less', function() {
+  return gulp.src('less/style.less')
+    .pipe(less())
+    .on('error', function(e) {
+      gutil.log(e);
+      this.emit('end');
+    })
+    .pipe(gulp.dest('public/stylesheets/'));
+});
+
+gulp.task('watch', function() {
+  gulp.watch('less/style.less', ['less']);
+});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gulpfile</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

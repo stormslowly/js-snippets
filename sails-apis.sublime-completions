@@ -17,5 +17,8 @@
 	}, {
 		"trigger": "res.badRequest\t sails badRequest",
 		"contents": "res.badRequest('${1:you are so bad}')"
+	}, {
+		"trigger": "res.negotiate\t sails negotiate(err)",
+		"contents": "res.negotiate(${1:error})"
 	}]
 }

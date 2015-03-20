@@ -151,7 +151,7 @@
 		"contents": "res.clearCookie(${1:name},${2: [options]})"
 	}, {
 		"trigger": "res.redirect",
-		"contents": "res.redirect(${1:[status]},${2: url})"
+		"contents": "res.redirect(${1:[<sta></sta>tus]},${2: url})"
 	}, {
 		"trigger": "res.location",
 		"contents": "res.location"
