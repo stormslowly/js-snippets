@@ -3,13 +3,13 @@
 	"scope": "source.js",
 
 	"completions": [{
-		"trigger": "req.flash",
+		"trigger": "req.flash \t sails",
 		"contents": "req.flash(${1:type},${2: message})"
 	}, {
-		"trigger": "res.redirect",
+		"trigger": "res.redirect \t sails ",
 		"contents": "res.redirect(${1:status|url},${2: url})"
 	}, {
-		"trigger": "req.session\tsession",
+		"trigger": "req.session\t sails session",
 		"contents": "req.session."
 	}, {
 		"trigger": "req.isSocket\t sails .isSocket",
