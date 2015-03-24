@@ -3,215 +3,214 @@
 	"scope": "source.js",
 
 	"completions": [{
-		"trigger": "app.set",
+		"trigger": "app.set\t express 3.x",
 		"contents": "app.set(${1:name},${2: value})"
 	}, {
-		"trigger": "app.get",
+		"trigger": "app.get\t express 3.x",
 		"contents": "app.get(${1:name})"
 	}, {
-		"trigger": "app.enable",
+		"trigger": "app.enable\t express 3.x",
 		"contents": "app.enable(${1:name})"
 	}, {
-		"trigger": "app.disable",
+		"trigger": "app.disable\t express 3.x",
 		"contents": "app.disable(${1:name})"
 	}, {
-		"trigger": "app.enabled",
+		"trigger": "app.enabled\t express 3.x",
 		"contents": "app.enabled(${1:name})"
 	}, {
-		"trigger": "app.disabled",
+		"trigger": "app.disabled\t express 3.x",
 		"contents": "app.disabled(${1:name})"
 	}, {
-		"trigger": "app.configure",
+		"trigger": "app.configure\t express 3.x",
 		"contents": "app.configure(${1:[env]},${2: callback})"
 	}, {
-		"trigger": "app.use",
+		"trigger": "app.use\t express 3.x",
 		"contents": "app.use(${1:[path]},${2: function})"
 	}, {
-		"trigger": "settings",
+		"trigger": "settings\t express 3.x",
 		"contents": "settings"
 	}, {
-		"trigger": "app.engine",
+		"trigger": "app.engine\t express 3.x",
 		"contents": "app.engine(${1:ext},${2: callback})"
 	}, {
-		"trigger": "app.param",
+		"trigger": "app.param\t express 3.x",
 		"contents": "app.param(${1:[name]},${2: callback})"
 	}, {
-		"trigger": "app.VERB",
+		"trigger": "app.VERB\t express 3.x",
 		"contents": "app.VERB(${1:path},${2: [callback...]},${3: callback})"
 	}, {
-		"trigger": "app.all",
+		"trigger": "app.all\t express 3.x",
 		"contents": "app.all(${1:path},${2: [callback...]},${3: callback})"
 	}, {
-		"trigger": "app.locals",
+		"trigger": "app.locals\t express 3.x",
 		"contents": "app.locals"
 	}, {
-		"trigger": "app.render",
+		"trigger": "app.render\t express 3.x",
 		"contents": "app.render(${1:view},${2: [options]},${3: callback})"
 	}, {
-		"trigger": "app.routes",
+		"trigger": "app.routes\t express 3.x",
 		"contents": "app.routes"
 	}, {
-		"trigger": "app.listen",
+		"trigger": "app.listen\t express 3.x",
 		"contents": "app.listen(${1:})"
 	}, {
-		"trigger": "req.params",
+		"trigger": "req.params\t express 3.x",
 		"contents": "req.params"
 	}, {
-		"trigger": "req.query",
+		"trigger": "req.query\t express 3.x",
 		"contents": "req.query"
 	}, {
-		"trigger": "req.body",
+		"trigger": "req.body\t express 3.x",
 		"contents": "req.body"
 	}, {
-		"trigger": "req.files",
+		"trigger": "req.files\t express 3.x",
 		"contents": "req.files"
 	}, {
-		"trigger": "req.param",
+		"trigger": "req.param\t express 3.x",
 		"contents": "req.param(${1:name})"
 	}, {
-		"trigger": "req.route",
+		"trigger": "req.route\t express 3.x",
 		"contents": "req.route"
 	}, {
-		"trigger": "req.cookies",
+		"trigger": "req.cookies\t express 3.x",
 		"contents": "req.cookies"
 	}, {
-		"trigger": "req.signedCookies",
+		"trigger": "req.signedCookies\t express 3.x",
 		"contents": "req.signedCookies"
 	}, {
-		"trigger": "req.get",
+		"trigger": "req.get\t express 3.x",
 		"contents": "req.get(${1:field})"
 	}, {
-		"trigger": "req.accepts",
+		"trigger": "req.accepts\t express 3.x",
 		"contents": "req.accepts(${1:types})"
 	}, {
-		"trigger": "req.accepted",
+		"trigger": "req.accepted\t express 3.x",
 		"contents": "req.accepted"
 	}, {
-		"trigger": "req.is",
+		"trigger": "req.is\t express 3.x",
 		"contents": "req.is(${1:type})"
 	}, {
-		"trigger": "req.ip",
+		"trigger": "req.ip\t express 3.x",
 		"contents": "req.ip"
 	}, {
-		"trigger": "req.ips",
+		"trigger": "req.ips\t express 3.x",
 		"contents": "req.ips"
 	}, {
-		"trigger": "req.path",
+		"trigger": "req.path\t express 3.x",
 		"contents": "req.path"
 	}, {
-		"trigger": "req.host",
+		"trigger": "req.host\t express 3.x",
 		"contents": "req.host"
 	}, {
-		"trigger": "req.fresh",
+		"trigger": "req.fresh\t express 3.x",
 		"contents": "req.fresh"
 	}, {
-		"trigger": "req.stale",
+		"trigger": "req.stale\t express 3.x",
 		"contents": "req.stale"
 	}, {
-		"trigger": "req.xhr",
+		"trigger": "req.xhr\t express 3.x",
 		"contents": "req.xhr"
 	}, {
-		"trigger": "req.protocol",
+		"trigger": "req.protocol\t express 3.x",
 		"contents": "req.protocol"
 	}, {
-		"trigger": "req.secure",
+		"trigger": "req.secure\t express 3.x",
 		"contents": "req.secure"
 	}, {
-		"trigger": "req.subdomains",
+		"trigger": "req.subdomains\t express 3.x",
 		"contents": "req.subdomains"
 	}, {
-		"trigger": "req.originalUrl",
+		"trigger": "req.originalUrl\t express 3.x",
 		"contents": "req.originalUrl"
 	}, {
-		"trigger": "req.acceptedLanguages",
+		"trigger": "req.acceptedLanguages\t express 3.x",
 		"contents": "req.acceptedLanguages"
 	}, {
-		"trigger": "req.acceptedCharsets",
+		"trigger": "req.acceptedCharsets\t express 3.x",
 		"contents": "req.acceptedCharsets"
 	}, {
-		"trigger": "req.acceptsCharset",
+		"trigger": "req.acceptsCharset\t express 3.x",
 		"contents": "req.acceptsCharset(${1:charset})"
 	}, {
-		"trigger": "req.acceptsLanguage",
+		"trigger": "req.acceptsLanguage\t express 3.x",
 		"contents": "req.acceptsLanguage(${1:lang})"
 	}, {
-		"trigger": "res.status",
+		"trigger": "res.status\t express 3.x",
 		"contents": "res.status(${1:code})"
 	}, {
-		"trigger": "res.set",
+		"trigger": "res.set\t express 3.x",
 		"contents": "res.set(${1:field},${2: [value]})"
 	}, {
-		"trigger": "res.get",
+		"trigger": "res.get\t express 3.x",
 		"contents": "res.get(${1:field})"
 	}, {
-		"trigger": "res.cookie",
+		"trigger": "res.cookie\t express 3.x",
 		"contents": "res.cookie(${1:name},${2: value},${3: [options]})"
 	}, {
-		"trigger": "res.clearCookie",
+		"trigger": "res.clearCookie\t express 3.x",
 		"contents": "res.clearCookie(${1:name},${2: [options]})"
 	}, {
-		"trigger": "res.redirect",
-		"contents": "res.redirect(${1:[<sta></sta>tus]},${2: url})"
+		"trigger": "res.redirect\t express 3.x",
+		"contents": "res.redirect(${1:[status]},${2: url})"
 	}, {
-		"trigger": "res.location",
+		"trigger": "res.location\t express 3.x",
 		"contents": "res.location"
 	}, {
-		"trigger": "res.charset",
+		"trigger": "res.charset\t express 3.x",
 		"contents": "res.charset"
 	}, {
-		"trigger": "res.send",
+		"trigger": "res.send\t express 3.x",
 		"contents": "res.send(${1:[body|status]},${2: [body]})"
 	}, {
-		"trigger": "res.json",
+		"trigger": "res.json\t express 3.x",
 		"contents": "res.json(${1:[status|body]},${2: [body]})"
 	}, {
-		"trigger": "res.jsonp",
+		"trigger": "res.jsonp\t express 3.x",
 		"contents": "res.jsonp(${1:[status|body]},${2: [body]})"
 	}, {
-		"trigger": "res.type",
+		"trigger": "res.type\t express 3.x",
 		"contents": "res.type(${1:type})"
 	}, {
-		"trigger": "res.format",
+		"trigger": "res.format\t express 3.x",
 		"contents": "res.format(${1:object})"
 	}, {
-		"trigger": "res.attachment",
+		"trigger": "res.attachment\t express 3.x",
 		"contents": "res.attachment(${1:[filename]})"
 	}, {
-		"trigger": "res.sendfile",
+		"trigger": "res.sendfile\t express 3.x",
 		"contents": "res.sendfile(${1:path},${2: [options]},${3: [fn]]})"
 	}, {
-		"trigger": "res.download",
+		"trigger": "res.download\t express 3.x",
 		"contents": "res.download(${1:path},${2: [filename]},${3: [fn]})"
 	}, {
-		"trigger": "res.links",
+		"trigger": "res.links\t express 3.x",
 		"contents": "res.links(${1:links})"
 	}, {
-		"trigger": "res.locals",
+		"trigger": "res.locals\t express 3.x",
 		"contents": "res.locals"
 	}, {
-		"trigger": "res.render",
+		"trigger": "res.render\t express 3.x",
 		"contents": "res.render(${1:view},${2: [locals]},${3: callback})"
 	}, {
-		"trigger": "express.basicAuth",
+		"trigger": "express.basicAuth\t express 3.x",
 		"contents": "express.basicAuth(${1:})"
 	}, {
-		"trigger": "express.bodyParser",
+		"trigger": "express.bodyParser\t express 3.x",
 		"contents": "express.bodyParser(${1:})"
 	}, {
-		"trigger": "express.compress",
+		"trigger": "express.compress\t express 3.x",
 		"contents": "express.compress(${1:})"
 	}, {
-		"trigger": "express.cookieParser",
+		"trigger": "express.cookieParser\t express 3.x",
 		"contents": "express.cookieParser(${1:})"
 	}, {
-		"trigger": "express.cookieSession",
+		"trigger": "express.cookieSession\t express 3.x",
 		"contents": "express.cookieSession(${1:})"
 	}, {
-		"trigger": "express.csrf",
+		"trigger": "express.csrf\t express 3.x",
 		"contents": "express.csrf(${1:})"
 	}, {
-		"trigger": "express.directory",
+		"trigger": "express.directory\t express 3.x",
 		"contents": "express.directory(${1:})"
 	}]
-
 }
