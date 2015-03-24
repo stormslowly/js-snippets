@@ -19,9 +19,6 @@
 		"trigger": "circle\tjsProp",
 		"contents": "circle"
 	}, {
-		"trigger": "console\tjsProp",
-		"contents": "console"
-	}, {
 		"trigger": "constructor\tjsProp",
 		"contents": "constructor"
 	}, {
