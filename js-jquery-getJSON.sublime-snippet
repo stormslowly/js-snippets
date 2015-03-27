@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+$.getJSON('{$1:url}')
+  .done(function(res, xhr) {
+    console.log('groups', res);
+  })
+  .fail(function(res) {
+    console.error('getJSON', err.status,res.statusText,res.responseText);
+  });
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ajaxgetjson</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

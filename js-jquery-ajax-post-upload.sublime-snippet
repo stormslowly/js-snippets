@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+var formData = new FormData();
+formData.append('ics','some');
+$.ajax({
+  type: 'POST',
+  url: '${1:url}',
+  data: formData,
+  processData: false,
+  contentType: false
+}).done(function(res,xhr) {
+  console.log('msg', msg,xhr);
+}).fail(function() {
+  console.log('logs', arguments);
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ajaxupload</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
