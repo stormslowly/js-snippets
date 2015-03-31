@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-$.getJSON('{$1:url}')
+\$.getJSON('${1:url}')
   .done(function(res, xhr) {
     console.log('groups', res);
   })
