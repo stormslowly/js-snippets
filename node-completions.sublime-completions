@@ -1,137 +1,392 @@
 {
-  "scope": [
-  "source.js"
-  ],
+	"scope": "source.js",
 
-  "completions": [
-    { "trigger": "fs.rename", "contents": "fs.rename(${1:oldPath}, ${2:newPath}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.renameSync", "contents": "fs.renameSync(${1:oldPath}, ${2:newPath})${0}" },
-    { "trigger": "fs.ftruncate", "contents": "fs.ftruncate(${1:fd}, ${2:len}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.ftruncateSync", "contents": "fs.ftruncateSync(${1:fd}, ${2:len})${0}" },
-    { "trigger": "fs.truncate", "contents": "fs.truncate(${1:path}, ${2:len}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.truncateSync", "contents": "fs.truncateSync(${1:path}, ${2:len})${0}" },
-    { "trigger": "fs.chown", "contents": "fs.chown(${1:path}, ${2:uid}, ${3:gid}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.chownSync", "contents": "fs.chownSync(${1:path}, ${2:uid}, ${3:gid})${0}" },
-    { "trigger": "fs.fchown", "contents": "fs.fchown(${1:fd}, ${2:uid}, ${3:gid}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.fchownSync", "contents": "fs.fchownSync(${1:fd}, ${2:uid}, ${3:gid})${0}" },
-    { "trigger": "fs.lchown", "contents": "fs.lchown(${1:path}, ${2:uid}, ${3:gid}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.lchownSync", "contents": "fs.lchownSync(${1:path}, ${2:uid}, ${3:gid})${0}" },
-    { "trigger": "fs.chmod", "contents": "fs.chmod(${1:path}, ${2:mode}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.chmodSync", "contents": "fs.chmodSync(${1:path}, ${2:mode})${0}" },
-    { "trigger": "fs.fchmod", "contents": "fs.fchmod(${1:fd}, ${2:mode}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.fchmodSync", "contents": "fs.fchmodSync(${1:fd}, ${2:mode})${0}" },
-    { "trigger": "fs.lchmod", "contents": "fs.lchmod(${1:path}, ${2:mode}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.lchmodSync", "contents": "fs.lchmodSync(${1:path}, ${2:mode})${0}" },
-    { "trigger": "fs.stat", "contents": "fs.stat(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.lstat", "contents": "fs.lstat(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.fstat", "contents": "fs.fstat(${1:fd}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.statSync", "contents": "fs.statSync(${1:path})${0}" },
-    { "trigger": "fs.lstatSync", "contents": "fs.lstatSync(${1:path})${0}" },
-    { "trigger": "fs.fstatSync", "contents": "fs.fstatSync(${1:fd})${0}" },
-    { "trigger": "fs.link", "contents": "fs.link(${1:srcpath}, ${2:dstpath}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.linkSync", "contents": "fs.linkSync(${1:srcpath}, ${2:dstpath})${0}" },
-    { "trigger": "fs.symlink", "contents": "fs.symlink(${1:srcpath}, ${2:dstpath}, ${3:[type]}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.symlinkSync", "contents": "fs.symlinkSync(${1:srcpath}, ${2:dstpath}, ${3:[type]})${0}" },
-    { "trigger": "fs.readlink", "contents": "fs.readlink(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.readlinkSync", "contents": "fs.readlinkSync(${1:path})${0}" },
-    { "trigger": "fs.realpath", "contents": "fs.realpath(${1:path}, ${2:[cache]}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.realpathSync", "contents": "fs.realpathSync(${1:path}, ${2:[cache]})${0}" },
-    { "trigger": "fs.unlink", "contents": "fs.unlink(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.unlinkSync", "contents": "fs.unlinkSync(${1:path})${0}" },
-    { "trigger": "fs.rmdir", "contents": "fs.rmdir(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.rmdirSync", "contents": "fs.rmdirSync(${1:path})${0}" },
-    { "trigger": "fs.mkdir", "contents": "fs.mkdir(${1:path}, ${2:[mode]}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.mkdirSync", "contents": "fs.mkdirSync(${1:path}, ${2:[mode]})${0}" },
-    { "trigger": "fs.readdir", "contents": "fs.readdir(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.readdirSync", "contents": "fs.readdirSync(${1:path})${0}" },
-    { "trigger": "fs.close", "contents": "fs.close(${1:fd}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.closeSync", "contents": "fs.closeSync(${1:fd})${0}" },
-    { "trigger": "fs.open", "contents": "fs.open(${1:path}, ${2:flags}, ${3:[mode]}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.openSync", "contents": "fs.openSync(${1:path}, ${2:flags}, ${3:[mode]})${0}" },
-    { "trigger": "fs.utimes", "contents": "fs.utimes(${1:path}, ${2:atime}, ${3:mtime}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.utimesSync", "contents": "fs.utimesSync(${1:path}, ${2:atime}, ${3:mtime})${0}" },
-    { "trigger": "fs.futimes", "contents": "fs.futimes(${1:fd}, ${2:atime}, ${3:mtime}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.futimesSync", "contents": "fs.futimesSync(${1:fd}, ${2:atime}, ${3:mtime})${0}" },
-    { "trigger": "fs.fsync", "contents": "fs.fsync(${1:fd}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.fsyncSync", "contents": "fs.fsyncSync(${1:fd})${0}" },
-    { "trigger": "fs.write", "contents": "fs.write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, function(${6:args}){\n\t${7:// body}\n})${0}" },
-    { "trigger": "fs.writeSync", "contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position})${0}" },
-    { "trigger": "fs.read", "contents": "fs.read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, function(${6:args}){\n\t${7:// body}\n})${0}" },
-    { "trigger": "fs.readSync", "contents": "fs.readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position})${0}" },
-    { "trigger": "fs.readFile", "contents": "fs.readFile(${1:filename}, ${2:[options]}, function(${3:args}){\n\t${4:// body}\n})${0}" },
-    { "trigger": "fs.readFileSync", "contents": "fs.readFileSync(${1:filename}, ${2:[options]})${0}" },
-    { "trigger": "fs.writeFile", "contents": "fs.writeFile(${1:filename}, ${2:data}, ${3:[options]}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.writeFileSync", "contents": "fs.writeFileSync(${1:filename}, ${2:data}, ${3:[options]})${0}" },
-    { "trigger": "fs.appendFile", "contents": "fs.appendFile(${1:filename}, ${2:data}, ${3:[options]}, function(${4:args}){\n\t${5:// body}\n})${0}" },
-    { "trigger": "fs.appendFileSync", "contents": "fs.appendFileSync(${1:filename}, ${2:data}, ${3:[options]})${0}" },
-    { "trigger": "fs.watchFile", "contents": "fs.watchFile(${1:filename}, ${2:[options]}, ${3:listener})${0}" },
-    { "trigger": "fs.unwatchFile", "contents": "fs.unwatchFile(${1:filename}, ${2:[listener]})${0}" },
-    { "trigger": "fs.watch", "contents": "fs.watch(${1:filename}, ${2:[options]}, ${3:[listener]})${0}" },
-    { "trigger": "fs.exists", "contents": "fs.exists(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}" },
-    { "trigger": "fs.existsSync", "contents": "fs.existsSync(${1:path})${0}" },
-    { "trigger": "fs.createReadStream", "contents": "fs.createReadStream(${1:path}, ${2:[options]})${0}" },
-    { "trigger": "fs.createWriteStream", "contents": "fs.createWriteStream(${1:path}, ${2:[options]})${0}" },
-    { "trigger": "__filename", "contents": "__filename${0}" },
-    { "trigger": "__dirname", "contents": "__dirname${0}" },
-    { "trigger": "path.join", "contents": "path.join(${1:[path1]}, ${2:[path2]}, ${3:[...]})${0}" },
-    { "trigger": "path.resolve", "contents": "path.resolve(${1:[from ...]}, ${2:to})${0}" },
-    { "trigger": "path.relative", "contents": "path.relative(${1:from}, ${2:to})${0}" },
-    { "trigger": "path.dirname", "contents": "path.dirname(${1:p})${0}" },
-    { "trigger": "path.basename", "contents": "path.basename(${1:p}, ${2:[ext]})${0}" },
-    { "trigger": "path.extname", "contents": "path.extname(${1:p})process.stdout${0}" },
-    { "trigger": "process.stderr", "contents": "process.stderr${0}" },
-    { "trigger": "process.stdin", "contents": "process.stdin${0}" },
-    { "trigger": "process.argv", "contents": "process.argv${0}" },
-    { "trigger": "process.execPath", "contents": "process.execPath${0}" },
-    { "trigger": "process.execArgv", "contents": "process.execArgv${0}" },
-    { "trigger": "process.abort", "contents": "process.abort()${0}" },
-    { "trigger": "process.chdir", "contents": "process.chdir(${1:directory})${0}" },
-    { "trigger": "process.cwd", "contents": "process.cwd()${0}" },
-    { "trigger": "process.env", "contents": "process.env${0}" },
-    { "trigger": "process.exit", "contents": "process.exit(${1:[code]})${0}" },
-    { "trigger": "process.getgid", "contents": "process.getgid()${0}" },
-    { "trigger": "process.setgid", "contents": "process.setgid(${1:id})${0}" },
-    { "trigger": "process.getuid", "contents": "process.getuid()${0}" },
-    { "trigger": "process.setuid", "contents": "process.setuid(${1:id})${0}" },
-    { "trigger": "process.getgroups", "contents": "process.getgroups()${0}" },
-    { "trigger": "process.setgroups", "contents": "process.setgroups(${1:groups})${0}" },
-    { "trigger": "process.initgroups", "contents": "process.initgroups(${1:user}, ${2:extra_group})${0}" },
-    { "trigger": "process.version", "contents": "process.version${0}" },
-    { "trigger": "process.versions", "contents": "process.versions${0}" },
-    { "trigger": "process.config", "contents": "process.config${0}" },
-    { "trigger": "process.kill", "contents": "process.kill(${1:pid}, ${2:[signal]})${0}" },
-    { "trigger": "process.pid", "contents": "process.pid${0}" },
-    { "trigger": "process.title", "contents": "process.title${0}" },
-    { "trigger": "process.arch", "contents": "process.arch${0}" },
-    { "trigger": "process.platform", "contents": "process.platform${0}" },
-    { "trigger": "process.memoryUsage", "contents": "process.memoryUsage()${0}" },
-    { "trigger": "process.nextTick", "contents": "process.nextTick(function(${1:args}){\n\t${2:// body}\n})${0}" },
-    { "trigger": "process.maxTickDepth", "contents": "process.maxTickDepth${0}" },
-    { "trigger": "process.umask", "contents": "process.umask(${1:[mask]})${0}" },
-    { "trigger": "process.uptime", "contents": "process.uptime()${0}" },
-    { "trigger": "process.hrtime", "contents": "process.hrtime()util.format(${1:format}, ${2:[...]})${0}" },
-    { "trigger": "util.debug", "contents": "util.debug(${1:string})${0}" },
-    { "trigger": "util.error", "contents": "util.error(${1:[...]})${0}" },
-    { "trigger": "util.puts", "contents": "util.puts(${1:[...]})${0}" },
-    { "trigger": "util.print", "contents": "util.print(${1:[...]})${0}" },
-    { "trigger": "util.log", "contents": "util.log(${1:string})${0}" },
-    { "trigger": "util.inspect", "contents": "util.inspect(${1:object}, ${2:[options]})${0}" },
-    { "trigger": "util.isArray", "contents": "util.isArray(${1:object})${0}" },
-    { "trigger": "util.isRegExp", "contents": "util.isRegExp(${1:object})${0}" },
-    { "trigger": "util.isDate", "contents": "util.isDate(${1:object})${0}" },
-    { "trigger": "util.isError", "contents": "util.isError(${1:object})${0}" },
-    { "trigger": "util.pump", "contents": "util.pump(${1:readableStream}, ${2:writableStream}, ${3:[callback]})${0}" },
-    { "trigger": "os.endianness", "contents": "os.endianness()${0}" },
-    { "trigger": "os.hostname", "contents": "os.hostname()${0}" },
-    { "trigger": "os.type", "contents": "os.type()${0}" },
-    { "trigger": "os.platform", "contents": "os.platform()${0}" },
-    { "trigger": "os.arch", "contents": "os.arch()${0}" },
-    { "trigger": "os.release", "contents": "os.release()${0}" },
-    { "trigger": "os.uptime", "contents": "os.uptime()${0}" },
-    { "trigger": "os.loadavg", "contents": "os.loadavg()${0}" },
-    { "trigger": "os.totalmem", "contents": "os.totalmem()${0}" },
-    { "trigger": "os.freemem", "contents": "os.freemem()${0}" },
-    { "trigger": "os.cpus", "contents": "os.cpus()${0}" },
-    { "trigger": "os.networkInterfaces", "contents": "os.networkInterfaces()${0}" },
-  ]
+	"completions": [{
+		"trigger": "fs.rename",
+		"contents": "fs.rename(${1:oldPath}, ${2:newPath}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.renameSync",
+		"contents": "fs.renameSync(${1:oldPath}, ${2:newPath})${0}"
+	}, {
+		"trigger": "fs.ftruncate",
+		"contents": "fs.ftruncate(${1:fd}, ${2:len}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.ftruncateSync",
+		"contents": "fs.ftruncateSync(${1:fd}, ${2:len})${0}"
+	}, {
+		"trigger": "fs.truncate",
+		"contents": "fs.truncate(${1:path}, ${2:len}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.truncateSync",
+		"contents": "fs.truncateSync(${1:path}, ${2:len})${0}"
+	}, {
+		"trigger": "fs.chown",
+		"contents": "fs.chown(${1:path}, ${2:uid}, ${3:gid}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.chownSync",
+		"contents": "fs.chownSync(${1:path}, ${2:uid}, ${3:gid})${0}"
+	}, {
+		"trigger": "fs.fchown",
+		"contents": "fs.fchown(${1:fd}, ${2:uid}, ${3:gid}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.fchownSync",
+		"contents": "fs.fchownSync(${1:fd}, ${2:uid}, ${3:gid})${0}"
+	}, {
+		"trigger": "fs.lchown",
+		"contents": "fs.lchown(${1:path}, ${2:uid}, ${3:gid}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.lchownSync",
+		"contents": "fs.lchownSync(${1:path}, ${2:uid}, ${3:gid})${0}"
+	}, {
+		"trigger": "fs.chmod",
+		"contents": "fs.chmod(${1:path}, ${2:mode}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.chmodSync",
+		"contents": "fs.chmodSync(${1:path}, ${2:mode})${0}"
+	}, {
+		"trigger": "fs.fchmod",
+		"contents": "fs.fchmod(${1:fd}, ${2:mode}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.fchmodSync",
+		"contents": "fs.fchmodSync(${1:fd}, ${2:mode})${0}"
+	}, {
+		"trigger": "fs.lchmod",
+		"contents": "fs.lchmod(${1:path}, ${2:mode}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.lchmodSync",
+		"contents": "fs.lchmodSync(${1:path}, ${2:mode})${0}"
+	}, {
+		"trigger": "fs.stat",
+		"contents": "fs.stat(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.lstat",
+		"contents": "fs.lstat(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.fstat",
+		"contents": "fs.fstat(${1:fd}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.statSync",
+		"contents": "fs.statSync(${1:path})${0}"
+	}, {
+		"trigger": "fs.lstatSync",
+		"contents": "fs.lstatSync(${1:path})${0}"
+	}, {
+		"trigger": "fs.fstatSync",
+		"contents": "fs.fstatSync(${1:fd})${0}"
+	}, {
+		"trigger": "fs.link",
+		"contents": "fs.link(${1:srcpath}, ${2:dstpath}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.linkSync",
+		"contents": "fs.linkSync(${1:srcpath}, ${2:dstpath})${0}"
+	}, {
+		"trigger": "fs.symlink",
+		"contents": "fs.symlink(${1:srcpath}, ${2:dstpath}, ${3:[type]}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.symlinkSync",
+		"contents": "fs.symlinkSync(${1:srcpath}, ${2:dstpath}, ${3:[type]})${0}"
+	}, {
+		"trigger": "fs.readlink",
+		"contents": "fs.readlink(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.readlinkSync",
+		"contents": "fs.readlinkSync(${1:path})${0}"
+	}, {
+		"trigger": "fs.realpath",
+		"contents": "fs.realpath(${1:path}, ${2:[cache]}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.realpathSync",
+		"contents": "fs.realpathSync(${1:path}, ${2:[cache]})${0}"
+	}, {
+		"trigger": "fs.unlink",
+		"contents": "fs.unlink(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.unlinkSync",
+		"contents": "fs.unlinkSync(${1:path})${0}"
+	}, {
+		"trigger": "fs.rmdir",
+		"contents": "fs.rmdir(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.rmdirSync",
+		"contents": "fs.rmdirSync(${1:path})${0}"
+	}, {
+		"trigger": "fs.mkdir",
+		"contents": "fs.mkdir(${1:path}, ${2:[mode]}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.mkdirSync",
+		"contents": "fs.mkdirSync(${1:path}, ${2:[mode]})${0}"
+	}, {
+		"trigger": "fs.readdir",
+		"contents": "fs.readdir(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.readdirSync",
+		"contents": "fs.readdirSync(${1:path})${0}"
+	}, {
+		"trigger": "fs.close",
+		"contents": "fs.close(${1:fd}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.closeSync",
+		"contents": "fs.closeSync(${1:fd})${0}"
+	}, {
+		"trigger": "fs.open",
+		"contents": "fs.open(${1:path}, ${2:flags}, ${3:[mode]}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.openSync",
+		"contents": "fs.openSync(${1:path}, ${2:flags}, ${3:[mode]})${0}"
+	}, {
+		"trigger": "fs.utimes",
+		"contents": "fs.utimes(${1:path}, ${2:atime}, ${3:mtime}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.utimesSync",
+		"contents": "fs.utimesSync(${1:path}, ${2:atime}, ${3:mtime})${0}"
+	}, {
+		"trigger": "fs.futimes",
+		"contents": "fs.futimes(${1:fd}, ${2:atime}, ${3:mtime}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.futimesSync",
+		"contents": "fs.futimesSync(${1:fd}, ${2:atime}, ${3:mtime})${0}"
+	}, {
+		"trigger": "fs.fsync",
+		"contents": "fs.fsync(${1:fd}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.fsyncSync",
+		"contents": "fs.fsyncSync(${1:fd})${0}"
+	}, {
+		"trigger": "fs.write",
+		"contents": "fs.write(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, function(${6:args}){\n\t${7:// body}\n})${0}"
+	}, {
+		"trigger": "fs.writeSync",
+		"contents": "fs.writeSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position})${0}"
+	}, {
+		"trigger": "fs.read",
+		"contents": "fs.read(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position}, function(${6:args}){\n\t${7:// body}\n})${0}"
+	}, {
+		"trigger": "fs.readSync",
+		"contents": "fs.readSync(${1:fd}, ${2:buffer}, ${3:offset}, ${4:length}, ${5:position})${0}"
+	}, {
+		"trigger": "fs.readFile",
+		"contents": "fs.readFile(${1:filename}, ${2:[options]}, function(${3:args}){\n\t${4:// body}\n})${0}"
+	}, {
+		"trigger": "fs.readFileSync",
+		"contents": "fs.readFileSync(${1:filename}, ${2:[options]})${0}"
+	}, {
+		"trigger": "fs.writeFile",
+		"contents": "fs.writeFile(${1:filename}, ${2:data}, ${3:[options]}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.writeFileSync",
+		"contents": "fs.writeFileSync(${1:filename}, ${2:data}, ${3:[options]})${0}"
+	}, {
+		"trigger": "fs.appendFile",
+		"contents": "fs.appendFile(${1:filename}, ${2:data}, ${3:[options]}, function(${4:args}){\n\t${5:// body}\n})${0}"
+	}, {
+		"trigger": "fs.appendFileSync",
+		"contents": "fs.appendFileSync(${1:filename}, ${2:data}, ${3:[options]})${0}"
+	}, {
+		"trigger": "fs.watchFile",
+		"contents": "fs.watchFile(${1:filename}, ${2:[options]}, ${3:listener})${0}"
+	}, {
+		"trigger": "fs.unwatchFile",
+		"contents": "fs.unwatchFile(${1:filename}, ${2:[listener]})${0}"
+	}, {
+		"trigger": "fs.watch",
+		"contents": "fs.watch(${1:filename}, ${2:[options]}, ${3:[listener]})${0}"
+	}, {
+		"trigger": "fs.exists",
+		"contents": "fs.exists(${1:path}, function(${2:args}){\n\t${3:// body}\n})${0}"
+	}, {
+		"trigger": "fs.existsSync",
+		"contents": "fs.existsSync(${1:path})${0}"
+	}, {
+		"trigger": "fs.createReadStream",
+		"contents": "fs.createReadStream(${1:path}, ${2:[options]})${0}"
+	}, {
+		"trigger": "fs.createWriteStream",
+		"contents": "fs.createWriteStream(${1:path}, ${2:[options]})${0}"
+	}, {
+		"trigger": "__filename",
+		"contents": "__filename${0}"
+	}, {
+		"trigger": "__dirname",
+		"contents": "__dirname${0}"
+	}, {
+		"trigger": "path.join",
+		"contents": "path.join(${1:[path1]}, ${2:[path2]}, ${3:[...]})${0}"
+	}, {
+		"trigger": "path.resolve",
+		"contents": "path.resolve(${1:[from ...]}, ${2:to})${0}"
+	}, {
+		"trigger": "path.relative",
+		"contents": "path.relative(${1:from}, ${2:to})${0}"
+	}, {
+		"trigger": "path.dirname",
+		"contents": "path.dirname(${1:p})${0}"
+	}, {
+		"trigger": "path.basename",
+		"contents": "path.basename(${1:p}, ${2:[ext]})${0}"
+	}, {
+		"trigger": "path.extname",
+		"contents": "path.extname(${1:p})process.stdout${0}"
+	}, {
+		"trigger": "process.stderr",
+		"contents": "process.stderr${0}"
+	}, {
+		"trigger": "process.stdin",
+		"contents": "process.stdin${0}"
+	}, {
+		"trigger": "process.argv",
+		"contents": "process.argv${0}"
+	}, {
+		"trigger": "process.execPath",
+		"contents": "process.execPath${0}"
+	}, {
+		"trigger": "process.execArgv",
+		"contents": "process.execArgv${0}"
+	}, {
+		"trigger": "process.abort",
+		"contents": "process.abort()${0}"
+	}, {
+		"trigger": "process.chdir",
+		"contents": "process.chdir(${1:directory})${0}"
+	}, {
+		"trigger": "process.cwd",
+		"contents": "process.cwd()${0}"
+	}, {
+		"trigger": "process.env",
+		"contents": "process.env${0}"
+	}, {
+		"trigger": "process.exit",
+		"contents": "process.exit(${1:[code]})${0}"
+	}, {
+		"trigger": "process.getgid",
+		"contents": "process.getgid()${0}"
+	}, {
+		"trigger": "process.setgid",
+		"contents": "process.setgid(${1:id})${0}"
+	}, {
+		"trigger": "process.getuid",
+		"contents": "process.getuid()${0}"
+	}, {
+		"trigger": "process.setuid",
+		"contents": "process.setuid(${1:id})${0}"
+	}, {
+		"trigger": "process.getgroups",
+		"contents": "process.getgroups()${0}"
+	}, {
+		"trigger": "process.setgroups",
+		"contents": "process.setgroups(${1:groups})${0}"
+	}, {
+		"trigger": "process.initgroups",
+		"contents": "process.initgroups(${1:user}, ${2:extra_group})${0}"
+	}, {
+		"trigger": "process.version",
+		"contents": "process.version${0}"
+	}, {
+		"trigger": "process.versions",
+		"contents": "process.versions${0}"
+	}, {
+		"trigger": "process.config",
+		"contents": "process.config${0}"
+	}, {
+		"trigger": "process.kill",
+		"contents": "process.kill(${1:pid}, ${2:[signal]})${0}"
+	}, {
+		"trigger": "process.pid",
+		"contents": "process.pid${0}"
+	}, {
+		"trigger": "process.title",
+		"contents": "process.title${0}"
+	}, {
+		"trigger": "process.arch",
+		"contents": "process.arch${0}"
+	}, {
+		"trigger": "process.platform",
+		"contents": "process.platform${0}"
+	}, {
+		"trigger": "process.memoryUsage",
+		"contents": "process.memoryUsage()${0}"
+	}, {
+		"trigger": "process.nextTick",
+		"contents": "process.nextTick(function(${1:args}){\n\t${2:// body}\n})${0}"
+	}, {
+		"trigger": "process.maxTickDepth",
+		"contents": "process.maxTickDepth${0}"
+	}, {
+		"trigger": "process.umask",
+		"contents": "process.umask(${1:[mask]})${0}"
+	}, {
+		"trigger": "process.uptime",
+		"contents": "process.uptime()${0}"
+	}, {
+		"trigger": "process.hrtime",
+		"contents": "process.hrtime()util.format(${1:format}, ${2:[...]})${0}"
+	}, {
+		"trigger": "util.debug",
+		"contents": "util.debug(${1:string})${0}"
+	}, {
+		"trigger": "util.error",
+		"contents": "util.error(${1:[...]})${0}"
+	}, {
+		"trigger": "util.puts",
+		"contents": "util.puts(${1:[...]})${0}"
+	}, {
+		"trigger": "util.print",
+		"contents": "util.print(${1:[...]})${0}"
+	}, {
+		"trigger": "util.log",
+		"contents": "util.log(${1:string})${0}"
+	}, {
+		"trigger": "util.inspect",
+		"contents": "util.inspect(${1:object}, ${2:[options]})${0}"
+	}, {
+		"trigger": "util.isArray",
+		"contents": "util.isArray(${1:object})${0}"
+	}, {
+		"trigger": "util.isRegExp",
+		"contents": "util.isRegExp(${1:object})${0}"
+	}, {
+		"trigger": "util.isDate",
+		"contents": "util.isDate(${1:object})${0}"
+	}, {
+		"trigger": "util.isError",
+		"contents": "util.isError(${1:object})${0}"
+	}, {
+		"trigger": "util.pump",
+		"contents": "util.pump(${1:readableStream}, ${2:writableStream}, ${3:[callback]})${0}"
+	}, {
+		"trigger": "os.endianness",
+		"contents": "os.endianness()${0}"
+	}, {
+		"trigger": "os.hostname",
+		"contents": "os.hostname()${0}"
+	}, {
+		"trigger": "os.type",
+		"contents": "os.type()${0}"
+	}, {
+		"trigger": "os.platform",
+		"contents": "os.platform()${0}"
+	}, {
+		"trigger": "os.arch",
+		"contents": "os.arch()${0}"
+	}, {
+		"trigger": "os.release",
+		"contents": "os.release()${0}"
+	}, {
+		"trigger": "os.uptime",
+		"contents": "os.uptime()${0}"
+	}, {
+		"trigger": "os.loadavg",
+		"contents": "os.loadavg()${0}"
+	}, {
+		"trigger": "os.totalmem",
+		"contents": "os.totalmem()${0}"
+	}, {
+		"trigger": "os.freemem",
+		"contents": "os.freemem()${0}"
+	}, {
+		"trigger": "os.cpus",
+		"contents": "os.cpus()${0}"
+	}, {
+		"trigger": "os.networkInterfaces",
+		"contents": "os.networkInterfaces()${0}"
+	}, ]
 }
