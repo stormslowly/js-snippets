@@ -2,7 +2,7 @@
 	<content><![CDATA[
 var formData = new FormData();
 formData.append('ics','some');
-$.ajax({
+\$.ajax({
   type: 'POST',
   url: '${1:url}',
   data: formData,
