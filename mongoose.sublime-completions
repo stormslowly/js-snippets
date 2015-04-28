@@ -1,0 +1,13 @@
+{
+
+	"scope": "source.js",
+
+	"completions": [{
+		"trigger": "requiremongoose\t require mongoose",
+		"contents": "var mongoose = require('mongoose');\nvar Schema = mongoose.Schema;"
+	}, {
+		"trigger": "mongooseModel\t mongoose Model",
+		"contents": "mongoose.model('$1',$1${2:Schema})"
+	}]
+
+}
