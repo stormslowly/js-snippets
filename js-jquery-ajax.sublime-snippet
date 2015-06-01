@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+$.ajax({
+  type: "${1:GET}",
+  dataType: "json",
+  url: "${2:/url}",
+  data: {
+  },
+  beforeSend: function () {},
+  complete: function () {},
+  success: function (json) {
+		$3
+  },
+  error: function () {}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ajax</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
+
+
+
+
+
+
