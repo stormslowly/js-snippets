@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+function ${1:TheErrorName}(message) {
+  this.message = message;
+  this.name = '${1:TheErrorName}';
+  Error.captureStackTrace(this, ${1:TheErrorName});
+}
+${1:TheErrorName}.prototype = Object.create(Error.prototype);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Error</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
