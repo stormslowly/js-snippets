@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-$.ajax({
+\$.ajax({
   type: "${1:GET}",
   dataType: "json",
   url: "${2:/url}",
