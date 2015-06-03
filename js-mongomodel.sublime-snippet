@@ -14,7 +14,7 @@ $2
 ${1:ModelName}Schema.index('');
 ${1:ModelName}Schema.methods.used = function () {};
 
-var ${1:ModelName} = mongoose.model('GameAd', ${1:ModelName}Schema);
+var ${1:ModelName} = mongoose.model('${1:ModelName}', ${1:ModelName}Schema);
 module.exports = ${1:ModelName};
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

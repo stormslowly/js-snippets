@@ -8,6 +8,9 @@
 	}, {
 		"trigger": "mongooseModel\t mongoose Model",
 		"contents": "mongoose.model('$1',$1${2:Schema})"
+	}, {
+		"trigger": "findOneAndUpdate\t findOneAndUpdate",
+		"contents": "findOneAndUpdate({$1},{$2}).exec()"
 	}]
 
 }
