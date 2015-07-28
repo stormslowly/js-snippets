@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-it('should${1}',function(${2:done}){
+it('should${1}',function(){
   ${3}
 });
 ]]></content>

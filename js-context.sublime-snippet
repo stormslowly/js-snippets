@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-context('${1:soemthing}',function(${2:done}){
-  ${3:}
+context('${1:soemthing}',function(){
+  ${2:}
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
