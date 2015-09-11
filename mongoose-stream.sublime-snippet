@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+require('mongoose-querystream-worker')
+
+${1:Model}.find()
+    .setOptions({ timeout: false })
+    .stream()
+    .concurrency(5)
+    .work(function(${2:item},callback){
+		// work on every item
+		${3}
+    },function(error){
+		// when finish
+    });
+]]></content>
+	<tabTrigger>stream</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

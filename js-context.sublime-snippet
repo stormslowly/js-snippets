@@ -1,7 +1,12 @@
 <snippet>
 	<content><![CDATA[
 context('${1:soemthing}',function(){
-  ${2:}
+  beforeEach(function(){
+    ${2:}
+  });
+  afterEach(function(){
+	throw Error('Implement me')
+  });
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
