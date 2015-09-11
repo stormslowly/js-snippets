@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 require('mongoose-querystream-worker')
 
 ${1:Model}.find()
@@ -7,12 +7,12 @@ ${1:Model}.find()
     .stream()
     .concurrency(5)
     .work(function(${2:item},callback){
-		// work on every item
-		${3}
+        // work on every item
+        ${3}
     },function(error){
-		// when finish
+        // when finish
     });
 ]]></content>
-	<tabTrigger>stream</tabTrigger>
-	<scope>source.js</scope>
+    <tabTrigger>stream</tabTrigger>
+    <scope>source.js</scope>
 </snippet>
