@@ -11,6 +11,9 @@
 	}, {
 		"trigger": "findOneAndUpdate\t findOneAndUpdate",
 		"contents": "findOneAndUpdate({$1},{$2}).exec()"
+	}, {
+		"trigger": "setOptions\t setOptions Moogose",
+		"contents": "setOptions({ timeout: false })"
 	}]
 
 }
